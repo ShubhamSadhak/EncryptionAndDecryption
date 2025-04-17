@@ -1,0 +1,58 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+.container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 64px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+button {
+    background: #ff7eb3;
+    color: white;
+    border: none;
+    padding: 18px 26px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: medium;
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background: #ff3d80;
+    transform: scale(1.05);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

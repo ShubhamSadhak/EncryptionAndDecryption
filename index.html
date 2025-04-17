@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption & Decryption</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <div id='selectButtons' class="buttons">
+        <button onclick="showSection('encryptionSection')" class="button" id="buttons">🔒 Show Encryption</button>
+        <button onclick="showSection('decryptionSection')" class="button" id="buttons">🔓 Show Decryption</button>
+    </div>
+    
+    <div id="encryptionSection" class="container">
+        <div class="box">
+            <h2>🔒 Encryption</h2>
+            <input type="text" id="encryptText" placeholder="Enter text">
+            <input type="text" id="encryptKey" placeholder="Enter key">
+            <button onclick="encrypt()">Encrypt</button>
+            <p id="encryptResult"></p>
+        </div>
+    </div>
+    
+    <div id="decryptionSection" class="container">
+        <div class="box">
+            <h2>🔓 Decryption</h2>
+            <input type="text" id="decryptText" placeholder="Enter text">
+            <input type="text" id="decryptKey" placeholder="Enter key">
+            <button onclick="decrypt()">Decrypt</button>
+            <p id="decryptResult"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
